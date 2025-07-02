@@ -1,0 +1,260 @@
+/* Подключение шрифта */
+@font-face {
+  font-family: "Idealist";
+  src: url("../fonts/IdealistSans/Idealistsans.ttf") format("truetype");
+}
+
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+  font-family: "Idealist", sans-serif;
+  background-color: #383838;
+  min-height: 100vh;
+}
+
+/* Основной контейнер */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка сайта */
+.header {
+  background-color: #ffda57;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 540px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: #040404;
+  text-decoration: none;
+  font-size: 1.24rem;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Информация о корзине в шапке */
+.cart-info {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.cart-info a {
+  color: #040404;
+  text-decoration: none;
+  font-size: 1.24rem;
+}
+
+.cart-info a:hover {
+  text-decoration: underline;
+}
+
+/* Стиль для иконки корзины */
+.fot-cart {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-top: -2px;
+}
+
+/* Стиль для счетчика корзины */
+#cart-count {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+/* Логотип */
+.logo {
+  width: 20%;
+  height: auto;
+}
+
+/* Основной контент */
+.main {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(204, 204, 204);
+  height: 400px;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.slogan h1 {
+  font-size: 42px;
+}
+
+.silk {
+  width: 220px;
+  height: 60px;
+  margin: 20px;
+  padding: 8px;
+  background-color: #ffda57;
+  color: #383838;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Idealist", sans-serif;
+}
+
+.silk a {
+  font-size: 20px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.silk:hover {
+  background-color: #f7cb2b;
+}
+
+/* Контейнер для карточек */
+.katal {
+  display: flex;
+  flex-wrap: wrap; /* Разрешить перенос строк */
+  gap: 20px; /* Отступы между карточками */
+  justify-content: space-between; /* Распределение карточек */
+  padding: 20px; /* Отступы вокруг карточек */
+}
+
+/* Карточка */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(25% - 20px); /* 25% ширины минус отступы */
+  height: 520px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Включить паддинг и бордер в ширину */
+  background-color: rgb(204, 204, 204);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Изображение в карточке */
+.card-img {
+  width: 100%;
+  height: 270px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Название товара */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Цена товара */
+.card-price {
+  color: #3ac200;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Описание товара */
+.card-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.btn-add-to-cart {
+  width: 50%;
+  margin: 20px;
+  padding: 8px;
+  background-color: #ffda57;
+  color: #383838;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Idealist", sans-serif;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #f7cb2b;
+}
+
+/* Подвал сайта */
+.footer {
+  background-color: #2c2c2c;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(204, 204, 204);
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.telegram {
+  background-color: #2c2c2c;
+}

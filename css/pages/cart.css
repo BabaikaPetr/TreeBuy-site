@@ -1,0 +1,369 @@
+/* Подключение шрифта */
+@font-face {
+  font-family: "Idealist";
+  src: url("../../fonts/IdealistSans/Idealistsans.ttf") format("truetype");
+}
+
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+  font-family: "Idealist", sans-serif;
+  background-color: #383838;
+  min-height: 100vh;
+}
+
+/* Основной контейнер */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка сайта */
+.header {
+  background-color: #ffda57;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 540px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 90px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navigation a {
+  color: #040404;
+  text-decoration: none;
+  font-size: 1.24rem;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Информация о корзине в шапке */
+.cart-info {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.cart-info a {
+  color: #040404;
+  text-decoration: none;
+  font-size: 1.24rem;
+}
+
+.cart-info a:hover {
+  text-decoration: underline;
+}
+
+/* Стиль для иконки корзины */
+.fot-cart {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-top: -2px;
+}
+
+/* Стиль для счетчика корзины */
+#cart-count {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+/* Логотип */
+.logo {
+  width: 20%;
+  height: auto;
+}
+
+/* Основной контент */
+.main {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.korzin {
+  width: 80%;
+  height: auto;
+  background-color: #cccccc;
+  border-radius: 8px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.korzin h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 38px;
+}
+
+.korzin th {
+  font-size: 22px;
+}
+
+/* Стили для таблицы товаров */
+.korzin table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px; /* Расстояние между строками */
+}
+
+/* Уменьшение ширины столбца "Количество" */
+.korzin table th:nth-child(3),
+.korzin table td:nth-child(3) {
+  width: 60px; /* Устанавливаем фиксированную ширину */
+  text-align: center; /* Выравниваем текст по центру */
+}
+
+.korzin table th,
+.korzin table td {
+  padding: 10px;
+  text-align: left;
+  margin: 10px;
+}
+
+.korzin table th {
+  background-color: #ffda57;
+  color: #383838;
+  font-weight: bold;
+  /* border-bottom: 2px solid #383838; */
+}
+
+.korzin table td {
+  background-color: #ffffff;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+/* Стили для разделения товаров */
+.korzin tbody tr {
+  margin-bottom: 15px; /* Дополнительное расстояние между строками */
+}
+
+.niz-cart {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+}
+
+.btn-kupit {
+  width: 180px;
+  height: 40px;
+  margin: 20px;
+  padding: 8px;
+  background-color: #ffda57;
+  color: #383838;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Idealist", sans-serif;
+  font-size: 18px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.btn-kupit:hover {
+  background-color: #f7cb2b;
+}
+
+.btn-kupit a {
+  font-size: 18px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.kupit p {
+  margin-left: 22px;
+  font-size: 26px;
+}
+
+.btn-ochist {
+  width: 180px;
+  height: 40px;
+  margin: 35px;
+  margin-top: 50px;
+  margin-left: 570px;
+  padding: 8px;
+  background-color: #ffda57;
+  color: #383838;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Idealist", sans-serif;
+}
+
+.btn-ochist:hover {
+  background-color: #f7cb2b;
+}
+
+.btn-ochist a {
+  font-size: 18px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.non-cart {
+  text-align: center;
+  margin: 70px;
+  font-size: 24px;
+}
+
+.silk-cart {
+  width: 220px;
+  height: 60px;
+  margin: 20px;
+  margin-left: 480px;
+  padding: 8px;
+  background-color: #ffda57;
+  color: #383838;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Idealist", sans-serif;
+}
+
+.silk-cart:hover {
+  background-color: #f7cb2b;
+}
+
+.silk-cart a {
+  font-size: 18px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+/* Стили модального окна */
+.modal {
+  display: none;
+  /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #cccccc;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.silk {
+  width: 260px;
+  height: 60px;
+  margin: 20px;
+  padding: 8px;
+  background-color: #ffda57;
+  color: #383838;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Idealist", sans-serif;
+}
+
+.silk a {
+  font-size: 18px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.silk:hover {
+  background-color: #f7cb2b;
+}
+
+/* Подвал сайта */
+.footer {
+  background-color: #2c2c2c;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cccccc;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.telegram {
+  background-color: #2c2c2c;
+}

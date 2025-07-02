@@ -1,0 +1,228 @@
+/* Подключение шрифта */
+@font-face {
+  font-family: "Idealist";
+  src: url("../../fonts/IdealistSans/Idealistsans.ttf") format("truetype");
+}
+
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для body */
+body {
+  font-family: "Idealist", sans-serif;
+  background-color: #383838;
+  min-height: 100vh;
+}
+
+/* Основной контейнер */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка сайта */
+.header {
+  background-color: #ffda57;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 540px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: #040404;
+  text-decoration: none;
+  font-size: 1.24rem;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Информация о корзине в шапке */
+.cart-info {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.cart-info a {
+  color: #040404;
+  text-decoration: none;
+  font-size: 1.24rem;
+}
+
+.cart-info a:hover {
+  text-decoration: underline;
+}
+
+/* Стиль для иконки корзины */
+.fot-cart {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-top: -2px;
+}
+
+/* Стиль для счетчика корзины */
+#cart-count {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+/* Логотип */
+.logo {
+  width: 20%;
+  height: auto;
+}
+
+/* Основной контент */
+.main {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+
+  gap: 20px;
+}
+
+.informat {
+  gap: 10px;
+  border-radius: 15px;
+  margin: 70px;
+  margin-top: 50px;
+  background-color: #cccccc;
+  width: 800px;
+  padding: 4px;
+}
+
+.informat h1 {
+  font-size: 36px; /* Увеличиваем размер шрифта заголовка */
+  font-weight: bold; /* Можно добавить жирность */
+  text-align: center; /* Выравнивание по центру */
+  color: #383838;
+  margin: 10px;
+}
+
+.informat p {
+  font-size: 22px; /* Увеличиваем размер шрифта текста */
+  line-height: 1.6; /* Добавляем высоту строки для читаемости */
+  text-align: justify; /* Выравнивание текста по ширине */
+  color: #383838;
+  margin: 30px;
+}
+
+.contact {
+  border-radius: 15px;
+  background-color: #cccccc;
+  width: 400px;
+  height: 305px;
+  margin-top: 50px;
+  padding: 4px;
+}
+
+.contact h2 {
+  font-size: 34px; /* Увеличиваем размер шрифта заголовка */
+  font-weight: bold; /* Можно добавить жирность */
+  text-align: center; /* Выравнивание по центру */
+  color: #383838;
+  margin: 10px;
+}
+
+.contact p {
+  margin: 30px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.img {
+  z-index: 2;
+  width: 26\px;
+}
+
+.obr-form {
+  border-radius: 15px;
+  background-color: #cccccc;
+  width: 400px;
+  height: 300px;
+  margin-top: 70px;
+}
+
+.obr-form h2 {
+  font-size: 34px; /* Увеличиваем размер шрифта заголовка */
+  font-weight: bold; /* Можно добавить жирность */
+  text-align: center; /* Выравнивание по центру */
+  color: #383838;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Подвал сайта */
+.footer {
+  background-color: #2c2c2c;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cccccc;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.telegram {
+  background-color: #2c2c2c;
+}
